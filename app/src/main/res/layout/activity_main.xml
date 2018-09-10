@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background_3"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -12,34 +13,207 @@
 
         <EditText
             android:id="@+id/city"
-            android:hint="请输入城市"
-            android:inputType="text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:hint="请输入城市"
+            android:inputType="text" />
 
         <Button
             android:id="@+id/query"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="查询天气"/>
+            android:text="查询天气" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/text1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="日期: "
+            android:textSize="20sp"
+             />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#00FF33"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="空气状况: "/>
     <TextView
         android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#00FF33"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="感冒指数: "
+            android:textSize="20sp"/>
     <TextView
         android:id="@+id/text3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#00FF33"
+        android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="温度: "
+            android:textSize="20sp"/>
     <TextView
         android:id="@+id/text4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#00FF33"
+        android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="天气: "
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="#00FF33"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未来天气："
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日期: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#00FF33"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="温度: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text7"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#00FF33"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="风速: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text8"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#00FF33"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="白天天气: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text9"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#00FF33"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="夜间天气: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/text10"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#00FF33"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
